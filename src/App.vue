@@ -23,10 +23,27 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app>
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+    <v-app-bar app color="#12355B" dark prominent>
+      <v-app-bar-nav-icon
+        @click="drawer = !drawer"
+        color="#FF9800"
+      ></v-app-bar-nav-icon>
 
-      <v-app-bar-title>Tarefas</v-app-bar-title>
+      <v-toolbar-title style="color: #ff9800">Tarefas</v-toolbar-title>
+
+      <v-spacer></v-spacer>
+
+      <v-btn icon color="#FF9800">
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
+
+      <v-btn icon color="#FF9800">
+        <v-icon>mdi-heart</v-icon>
+      </v-btn>
+
+      <v-btn icon color="#FF9800">
+        <v-icon>mdi-dots-vertical</v-icon>
+      </v-btn>
     </v-app-bar>
 
     <v-main>
