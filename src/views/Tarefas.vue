@@ -1,17 +1,24 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <v-list flat subheader>
+      <v-subheader>Todas as tarefas</v-subheader>
+
+      <v-list-item-group v-model="settings" multiple active-class="">
+        <Tarefa />
+        <Tarefa />
+        <Tarefa />
+      </v-list-item-group>
+    </v-list>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import Tarefa from "../components/tarefas/Tarefa.vue";
 
 export default {
   name: "Home",
   components: {
-    HelloWorld,
+    Tarefa,
   },
 };
 </script>
